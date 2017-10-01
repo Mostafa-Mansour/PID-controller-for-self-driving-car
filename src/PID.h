@@ -16,6 +16,9 @@ public:
   double Kp;
   double Ki;
   double Kd;
+  double d_Kp,d_Ki,d_Kd;
+  double err;
+  double n;
 
   /*
   * Constructor
@@ -41,6 +44,7 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
 };
 
 #endif /* PID_H */
